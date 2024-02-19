@@ -10,4 +10,6 @@ import { ProductComponent } from '../../components/product/product.component';
 })
 export class ListComponent {
   img = 'https://picsum.photos/640/640?r=' + Math.random();
+
+  fromChild(event: string) {}
 }
