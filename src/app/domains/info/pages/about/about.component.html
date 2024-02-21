@@ -1,1 +1,18 @@
-<p>about works!</p>
+<div class="px-10">
+  <h1 class="text-lg font-bold">About</h1>
+  <p class="text-small">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iure veritatis
+    reprehenderit quasi esse excepturi pariatur ea dolores aspernatur harum
+    officia, eveniet perferendis distinctio id ipsum temporibus placeat!
+    Debitis, temporibus.
+  </p>
+  @if(duration() > 0 ){
+  <p class="text-xs">
+    Numero de clientes:
+    <app-counter [duration]="duration()" [message]="message()" />
+  </p>
+  }
+  <div>
+    <app-waveaudio audioUrl="assets/chuerk.mp3" />
+  </div>
+</div>
